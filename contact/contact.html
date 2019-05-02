@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Contact</title>
+</head>
+
+<body>
+
+
+
+  <top></top>
+  <contact></contact>
+  <app></app>
+  <footer></foorter>
+
+
+
+  <script src="tags/top.tag" type="riot/tag"></script>
+  <script src="tags/contact.tag" type="riot/tag"></script>
+  <script src="tags/app.tag" type="riot/tag"></script>
+  <script src="tags/footer.tag" type="riot/tag"></script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/riot@3.8/riot+compiler.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC2sxX3N9g67evED_bNnDOx0pySGtQ3FLw",
+      authDomain: "s19-final-contact.firebaseapp.com",
+      databaseURL: "https://s19-final-contact.firebaseio.com",
+      projectId: "s19-final-contact",
+      storageBucket: "s19-final-contact.appspot.com",
+      messagingSenderId: "936638295709"
+    };
+    firebase.initializeApp(config);
+    // Firebase Cached References
+  		var database = firebase.database();
+  		var rootRef = database.ref('/');
+
+  		var user = firebase.auth();
+
+  var observable = riot.observable();
+  riot.mount('*');
+</script>
+
+<script src="contact.js"></script>
+
+
+
+</body>
+
+</html>

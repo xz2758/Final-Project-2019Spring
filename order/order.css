@@ -1,0 +1,186 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color:#fdf5e6;
+    padding: 8px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px;) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.menubar{
+  margin-right: 200px;
+  font-size:50px;
+  cursor:pointer;
+}
+
+.logo{
+  margin-left: 625px;
+  margin-bottom: 50px;
+}
+
+.display-container{
+  position: relative;
+  size: 1100px 300px;
+}
+
+.bgimg {
+    overflow: visible;
+    background-position: center;
+    background-size: 1100px 400px;
+    background-image: url("img_parallax2.png");
+}
+
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row {
+  display: flex;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image1 {
+  opacity: 1;
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.image2 {
+  opacity: 1;
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.image3 {
+  opacity: 1;
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.grubhub {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.postmates {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.chowbus {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image1 {
+  opacity: 0.3;
+}
+.container:hover .image2 {
+  opacity: 0.3;
+}
+.container:hover .image3 {
+  opacity: 0.3;
+}
+
+.container:hover .grubhub {
+  opacity: 1;
+}
+.container:hover .postmates {
+  opacity: 1;
+}
+.container:hover .chowbus {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.padding{
+  padding-top: 50px;
+  padding-bottom: 65px;
+}
