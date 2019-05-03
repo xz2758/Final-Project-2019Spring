@@ -17,9 +17,8 @@
   </div>
 
 
-<div each={entry in messages}>
-  <div>test</div>
-</div>
+<message each={entry in messages}>
+</message>
 
 <script>
       var tag = this;
