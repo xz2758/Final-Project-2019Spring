@@ -45,7 +45,8 @@
         var msg = {
           key: key,
           uid: this.refs.name.value,
-          message: this.refs.commnet.value,
+          // message: this.refs.commnet.value,
+          message: this.refs.comment.value
         };
 
 
