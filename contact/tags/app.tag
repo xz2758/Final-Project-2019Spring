@@ -16,6 +16,11 @@
       </div>
   </div>
 
+
+<div each={entry in messages}>
+  <div>test</div>
+</div>
+
 <script>
       var tag = this;
 
@@ -33,7 +38,7 @@
 
       this.saveMsg = function(){
         var key = messagesRef.push().key;
-        console.log(key);
+        // console.log(key);
 
 
         // Our data object that we will write to the database.
@@ -51,8 +56,7 @@
       // See 0-dataRead
       messagesRef.on('value', function(snap){
         let dataAsObj = snap.val();
-
-
+        console.log(dataAsObj);
         var tempData = [];
 
         //instead of statically typing out the array value, we now read it in
