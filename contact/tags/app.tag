@@ -43,7 +43,7 @@
         // Our data object that we will write to the database.
         // We could design this model to have other properties, like author.
         var msg = {
-          key: key,
+          id: key,
           uid: this.refs.name.value,
           // message: this.refs.commnet.value,
           message: this.refs.comment.value
