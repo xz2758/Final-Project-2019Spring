@@ -17,7 +17,7 @@
   </div>
 
 
-<message each={entry in messages}>
+<message each={messages}>
 </message>
 
 <script>
@@ -28,7 +28,6 @@
 
       this.name = "anonymous"; // Starts anonymous, set by user interface.
       this.messages = [];
-
 
     //  this.setUser = function(){
     //    this.userID = this.refs.userInput.value;
