@@ -1,11 +1,11 @@
 <message>
-  <p>{ entry.uid }</p>
-  <p>{ entry.message}></p>
+  <p>{ uid }</p>
+  <p>{ message}></p>
   <button type="button" onclick={ remove }>Remove This</button>
 
 
   <script>
-
+        var messagesRef = rootRef.child('/messages');
         remove = function (){
             console.log("this.id", this.id);
         var key = this.id;
